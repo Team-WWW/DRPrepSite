@@ -27,11 +27,11 @@
             <nav class="st-menu st-effect-8" id="menu-8">
                 <h2 class="icon icon-stack">Sidebar</h2>
                 <ul>
-                    <li><a class="icon icon-data" href="#">Data Management</a></li>
-                    <li><a class="icon icon-location" href="#">Location</a></li>
-                    <li><a class="icon icon-study" href="#">Study</a></li>
-                    <li><a class="icon icon-photo" href="#">Collections</a></li>
-                    <li><a class="icon icon-wallet" href="#">Credits</a></li>
+                    <li><a class="icon icon-data" href="index.html">Home</a></li>
+                    <li><a class="icon icon-location" href="mobile.html">Mobile Application</a></li>
+                    <li><a class="icon icon-study" href="about.html">About Us</a></li>
+                    <li><a class="icon icon-photo" href="faq.html">FAQ</a></li>
+                    <li><a class="icon icon-wallet" href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         
@@ -43,7 +43,7 @@
                         <!-- Top Navigation -->
                             <div class="main clearfix">
                                 <div id="st-trigger-effects" class="column">
-                                    <button data-effect="st-effect-8">3D rotate out</button>
+                                    <button data-effect="st-effect-8">Menu</button>
                                 </div>
                             </div><!-- /main -->
                         </div><!-- /st-content-inner -->
@@ -51,24 +51,23 @@
                 </div><!-- /nav -->
             </header>
             
-            <!--<div id="main-content">
+            <div class="slider-wrapper theme-default">
                 <div id="slider" class="nivoSlider">
                     <img src="images/nemo.jpg">
                     <img src="images/toystory.jpg">
                     <img src="images/up.jpg">
                     <img src="images/walle.jpg">
                 </div>
-            </div> -->
-            
-        
+            </div>            
             <footer>
                 <ul>
-                    <li><a href="index.html">Home   -  </a></li>
-                    <li><a href="about.html" target="_blank">About   -  </a></li>
-                    <li><a href="mobile.html" target="_blank">Mobile Application   -  </a></li>
-                    <li><a href="faq.html" target="_blank">FAQ   -  </a></li>
-                    <li><a href="contact.html" target="_blank">Contact </a></li>
+                    <li><a href="index.html">About </a>-</li>
+                    <li><a href="#">Twitter </a >-</li>
+                    <li><a href="#">Facebook </a>-</li>
+                    <li><a href="#">Disclosure </a>-</li>
+                    <li><a href="#">Terms</a></li>
                 </ul>
+                <p>&copy; DRPrep</p>
             </footer>
             
         </div><!--st-pusher-->
@@ -78,9 +77,21 @@
     <script src="js/jquery.nivo.slider.pack.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/sidebarEffects.js"></script>
-    <script type="text/javascript">
+	<script type="text/javascript">
     $(window).load(function() {
-        $('#slider').nivoSlider();
+        $('#slider').nivoSlider({
+            effect: 'slide', // Specify sets like: 'fold,fade,sliceDown'
+            slices: 15, // For slice animations
+            boxCols: 8, // For box animations
+            boxRows: 4, // For box animations
+            animSpeed: 250, // Slide transition speed
+            pauseTime: 2000, // How long each slide will show
+            startSlide: 0, // Set starting Slide (0 index)
+            directionNav:false, // Arrow navigation
+            controlNav: false, // 1,2,3... navigation
+            pauseOnHover: true, // Stop animation while hovering
+            captionOpacity:0					
+        });
     });
     </script>
 </body>
