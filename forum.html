@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     
-    <title>DRPrep</title>
+    <title>DRPrep - Contact</title>
     
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Esteban' rel='stylesheet' type='text/css'>
     
@@ -16,8 +16,11 @@
     <link rel="stylesheet" type="text/css" href="css/icons.css" />
     <link rel="stylesheet" type="text/css" href="css/component.css" />
     <link rel="stylesheet" type="text/css" href="css/nivoslider-default.css" />
+    <link rel="stylesheet" href="https://cdn.moot.it/1/moot.css">
     
     <script src="js/modernizr.custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdn.moot.it/1/moot.min.js"></script>
 </head>
 
 <body>
@@ -52,12 +55,9 @@
                 </div><!-- /nav -->
             </header>
             
-            <div class="slider-wrapper theme-default">
-                <div id="slider" class="nivoSlider">
-                    <img src="images/nemo.jpg">
-                    <img src="images/toystory.jpg">
-                    <img src="images/up.jpg">
-                    <img src="images/walle.jpg">
+            <div class="wrapper">
+				<div id="content">
+      				<a class="moot" href="https://moot.it/i/drprep">drprep forums</a>
                 </div>
             </div>            
             <footer>
@@ -75,25 +75,7 @@
     </div><!--st-container-->
     
     <script src="js/jquery-1.9.0.min.js"></script>
-    <script src="js/jquery.nivo.slider.pack.js"></script>
     <script src="js/classie.js"></script>
     <script src="js/sidebarEffects.js"></script>
-	<script type="text/javascript">
-    $(window).load(function() {
-        $('#slider').nivoSlider({
-            effect: 'slide', // Specify sets like: 'fold,fade,sliceDown'
-            slices: 15, // For slice animations
-            boxCols: 8, // For box animations
-            boxRows: 4, // For box animations
-            animSpeed: 250, // Slide transition speed
-            pauseTime: 2000, // How long each slide will show
-            startSlide: 0, // Set starting Slide (0 index)
-            directionNav:false, // Arrow navigation
-            controlNav: false, // 1,2,3... navigation
-            pauseOnHover: true, // Stop animation while hovering
-            captionOpacity:0					
-        });
-    });
-    </script>
 </body>
 </html>
