@@ -14,7 +14,6 @@ body,
 }
 
 .st-content {
-	overflow-y: none;
 	background: #B23C35;
 }
 
@@ -25,6 +24,7 @@ body,
 
 .st-container {
 	position: relative;
+	overflow: hidden;
 }
 
 .st-pusher {

@@ -1,5 +1,5 @@
 ﻿<!doctype html>
-<html>
+<html class="no-js">
 
 <head>
     <!-- INCLUDE THIS BLOCK OF CODE IN ALL HTML DOCUMENTS!^-->
@@ -9,7 +9,9 @@
     
     <title>DRPrep</title>
     
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Esteban' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Esteban' rel='stylesheet' type='text/css'>
     
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
@@ -21,6 +23,7 @@
 </head>
 
 <body>
+	<html>
     <div class="st-container" id="st-container">
         <div class="st-pusher">
         	
@@ -51,15 +54,18 @@
                     </div><!-- /st-content -->
                 </div><!-- /nav -->
             </header>
-            
-            <div class="slider-wrapper theme-default">
-                <div id="slider" class="nivoSlider">
-                    <img src="images/nemo.jpg">
-                    <img src="images/toystory.jpg">
-                    <img src="images/up.jpg">
-                    <img src="images/walle.jpg">
-                </div>
-            </div>            
+            <div class="wrapper">
+            	<div id="content">
+                    <div class="slider-wrapper theme-default">
+                        <div id="slider" class="nivoSlider">
+                            <img src="images/nemo.jpg">
+                            <img src="images/toystory.jpg">
+                            <img src="images/up.jpg">
+                            <img src="images/walle.jpg">
+                        </div>
+                    </div>
+                 </div>
+          	</div>            
             <footer>
                 <ul>
                     <li><a href="index.html">About </a>-</li>
@@ -70,10 +76,9 @@
                 </ul>
                 <p>&copy; DRPrep</p>
             </footer>
-            
         </div><!--st-pusher-->
     </div><!--st-container-->
-    
+    </html>
     <script src="js/jquery-1.9.0.min.js"></script>
     <script src="js/jquery.nivo.slider.pack.js"></script>
     <script src="js/classie.js"></script>
