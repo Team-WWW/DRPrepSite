@@ -14,12 +14,13 @@ body,
 }
 
 .st-content {
-	background: #B23C35;
+	background: #FFF;
 }
 
 .st-content,
 .st-content-inner {
 	position: relative;
+	overflow: auto;
 }
 
 .st-container {
@@ -230,10 +231,14 @@ button {
 	text-transform: uppercase;
 	cursor: pointer;
 	display: inline-block;
-	margin-top: 4.55em;
+	margin-top: 2.75em;
 	border-radius: 2px;
 }
 
 button:hover {
 	background:#AA0D11;
+}
+#st-trigger-effects {
+	position: absolute;
+	right: 0;
 }

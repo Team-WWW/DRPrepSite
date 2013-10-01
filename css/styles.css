@@ -7,9 +7,12 @@ body {
 	padding:0;
 	position: relative;
 }
+header {
+	height: 5.25em;
+	background-color: #8b3935;	
+}
 h1 {
 	margin:0 auto;
-	padding-top:.6em;
 	text-align:center;
 	font-weight:100;
 	font-size: 36px;
@@ -33,25 +36,23 @@ p {
 	font-weight:400;
 	font-size:14px;
 	color:black;
-	
 }
-footer{
-	margin:0 auto;
+footer {
 	text-align:center;
-	position:absolute;
-	background:#8b3935 ;
+	background:#8b3935;
 	width:100%;
-	bottom:0;
-	z-index: 9;
 	height:5em;
 	color: #000;
+	position: fixed;
+	bottom: 0;
+	z-index: 9;
 }
 footer ul {
 	width: 100%;
 	margin:0 auto;
-	margin-top: 1.25em;
 }
 footer ul li {
+	margin-top: 1em;
 	display:inline-block;
 }
 footer a {
@@ -67,15 +68,12 @@ footer a:visited{
 	color:#E2E0E0;
 	text-decoration:none;
 }
-img {
-	
-}
 
 /* IDs */
 #header{
 	position:fixed;
 	width:100%;
-	height:7em;
+	height:3em;
 	top: 0;
 	z-index: 9;
 	background:#B23C35;
@@ -105,17 +103,26 @@ img {
 /*  CLASS */
 .slider-wrapper {	
 	width: 100%;
-	position: absolute;
-	max-height: 485px;
+	height: 100%;
 }
-.wrapper {
-	width: 100%;
-	height: 75%;
-	position: absolute;
-	margin-top: 112px;
+.main {
+	background-color: #FFF;
+	overflow: auto;	
 }
 
 /* OBJECTS */
 .moot {
-	font-size: 18px;	
+	font-size: 18px;
+}
+.m-logo {
+	display: none;	
+}
+.clearfix:before,
+.clearfix:after {
+	display: table;
+	content: " ";
+}
+
+.clearfix:after {
+	clear: both;
 }
