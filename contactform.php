@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- InstanceBeginEditable name="doctitle" -->
-    <title>DRPrep - Contact Us</title>
+    <title>DRPrep</title>
     <!-- InstanceEndEditable -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,100italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -52,30 +52,20 @@
                     </header>
                     <div class="main clearfix">
 						<!-- InstanceBeginEditable name="MainContent" -->
-                            <form id="drprepForm" method="post" action="contactform.php">
-                                <fieldset>
-                                <h2>Contact Us</h2>
-                                <p>Send comments, questions or concerns to the development team.</p>
+                        	<?php
+                                $to = "zackeleit@gmail.com";
+                                $subject = "DR Prep Form Submission";
+                                $body = "Name = ".$_POST['name']."\n From = ".$_POST['email']."\n Message = ".$_POST['comments'];
+                                $headers = 'From: '.$_POST['email']."\r\n".
+                                			'Reply-To: '.$_POST['email']."\r\n".
+                                            'X-Mailer: PHP/'.phpversion();
                                 
-                                <p id="nameField">
-                                    <label>name *</label>
-                                    <input type="text" name="name" pattern="[a-zA-Z ]{5,}" maxlength="20" size="20" required />
-                                </p>
-                                <p id="emailField">
-                                    <label>email *</label>
-                                    <input type="email" name="email" maxlength="30" size="32" required />
-                                </p>
-                                <p id="commentsField">
-                                    <label>Comments *</label>
-                                    <textarea type="text" name="comments" cols="76" rows="5" required></textarea>
-                                </p>
-                                    <button type="submit">Submit Form</button>
-                                    <button type="reset">Reset</button>
-                                </fieldset>
-                            </form>
-							<script>
-                                $("#drprepForm").validator();
-                            </script>
+                                if(mail ($to, $subject, $body, $headers) ) {
+                                    echo "<h2 class='frmMsg'>Thank you!</h2>";	
+                                } else {
+                                    echo "<h2 class='frmMsg'>Something went wrong! =(</h2>";	
+                                }                                
+                            ?>					
                         <!-- InstanceEndEditable -->                        
                     </div><!-- /main -->
                     <footer>
